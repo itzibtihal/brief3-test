@@ -406,16 +406,10 @@ textarea.input {
   }
 }
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 850px) {
+  .container{
+    margin-top: 70px;
+  }
   .form {
     grid-template-columns: 1fr;
   }
