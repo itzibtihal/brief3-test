@@ -143,7 +143,7 @@
                 <span> <i class="fa-solid fa-circle-check" style="color: #3fdbb1;"></i> Commuter benefits</span>
             </div>
             <br>
-            <span> <a href="advertise.html"> Explore more <i class="fa-solid fa-angle-right"
+            <span><a id="open"> Explore more <i class="fa-solid fa-angle-right"
                         style="color: #3183ff;"></i></a></span>
         </div>
         <div>
@@ -153,6 +153,15 @@
         </div>
 
     </section>
+
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+         <h1> Modals are here </h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex fugit magni labore natus placeat eum error reiciendis quos? Dicta tempora quod fuga. Nam porro blanditiis, voluptatum ipsam dicta tempora non eaque dolorum enim veritatis quibusdam illo laboriosam cum cupiditate officiis omnis delectus suscipit aliquid minima optio voluptatibus quisquam! Ab obcaecati saepe accusantium, praesentium natus consectetur nihil corrupti dolorem maiores eos impedit quod necessitatibus eveniet veniam. Impedit ut deleniti magnam aliquid.</p>
+          
+         <button id="close">close</button>
+        </div>
+    </div>
 
     
 
@@ -285,6 +294,20 @@
 
 
   <script src="js/header.js"></script>
+  <script>
+    const open = document.getElementById('open');
+    const modal_container = document.getElementById('modal_container');
+    const close = document.getElementById('close');
+
+    open.addEventListener('click',()=>{
+      modal_container.classList.add('show');
+    })
+    
+    close.addEventListener('click',()=>{
+      modal_container.classList.remove('show');
+    })
+
+  </script>
 </body>
 
 </html>
