@@ -1,22 +1,26 @@
-
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
-
-section.Creativity {
-
+.section1 {
+  margin-top: 150px;
   text-align: center;
-  padding: 100px 40px 10px;
-  transition: all 1s linear;
+  
 }
-section.Creativity .main h1 {
+
+.section2 img {
+  margin-left: 5%;
+}
+
+.section1 .main h1 {
   color: #02073e;
   font-size: 160%;
 }
-section.Creativity .main p {
+
+.section1 .main p {
   color: #02073e;
 }
-section.Creativity .main button {
+
+.section1 .main button {
   color: #ffffff;
   padding: 12px 25px;
   border-radius: 3px;
@@ -28,78 +32,74 @@ section.Creativity .main button {
   transition: .5s;
 }
 
-
-
-section.Creativity .main button:hover {
+.section1 .main button:hover {
   color: white;
   border-color: #0a8080;
-  background-color: #71aeaea4;
+  background-color: var(--mainColor);
   color: #0a8080;
-
 }
 
-
-section.second-Creativity {
+section.section2 {
   height: 40vh;
-  background-color: #71aeaea4;
+  background-color:#7fb8b8ad;
   margin: 0 -4.9%;
   margin-top: 440px;
-
 }
 
-section.second-Creativity .container {
+section.section2 .container {
   position: relative;
-  
 }
-section.second-Creativity .container img {
-    max-width: 70%;
-    height: auto;
-    margin-bottom: 60px;
-    position: absolute;
-    left: 15%;
-    top: -150%;
+
+section.section2 .container img {
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 60px;
+  position: absolute;
+  left: 15%;
+  top: -150%;
 }
-section.second-Creativity .container {
+
+section.section2 .container {
   text-align: center;
   padding: 40px;
-
   position: relative;
   text-align: center;
 }
-section.second-Creativity .container .title {
+
+section.section2 .container .title {
   margin-top: 100px;
 }
-
-
-section.third-Creativity {
-  height: fit-content;
-  background-color: #71aeaea4;
-  margin: 0 -4.9%;
-  
+section .section2{
+  width: 100%;
 }
-section.third-Creativity .container {
- 
+
+section.section3 {
+  height: fit-content;
+  background-color:#7fb8b8ad;
+  margin: 0 -4.9%;
+}
+
+section.section3 .container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex: 0 0 200px;
-padding: 0px 100px;
+  padding: 0px 100px;
   gap: 50px;
   align-items: center;
-  
 }
-section.third-Creativity .container div {
+
+section.section3 .container div {
   display: flex;
   align-items: start;
   gap: 20px;
- 
+}
 
+section.section3 .container div img {
+  width: 90px;
 }
-section.third-Creativity .container div img {
-  width: 80px;
- 
-}
-section.third-Creativity .container div div {
+
+section.section3 .container div div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,212 +107,267 @@ section.third-Creativity .container div div {
   min-width: 150px;
 }
 
-section.third-Creativity .container div div p {
+section.section3 .container div div p {
   margin-top: -10%;
 }
-section.third-Creativity .container div div h4 {
-  margin-top: -1px;
-}
 
-
-.Fourth-Creativity {
+.section4 {
   height: 35vh;
-  background-color: #71aeaea4;
+  background-color: #7fb8b8ad;
   margin: 0 -4.9%;
   text-align: center;
   position: relative;
-  
 }
-.Fourth-Creativity .text p {
+
+.section4 .text p {
   position: relative;
   display: inline;
-  /* z-index: 33; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
 }
-.Fourth-Creativity .text p span {
+
+.section4 .text p span {
   transform: translate(-50%, -50%);
   color: #7e8896;
   font-size: 10px;
 }
-.Fourth-Creativity .text p img {
+
+.section4 .text p img {
   width: 40px;
   position: absolute;
   top: -10%;
   left: -3%;
 }
 
-
-.brands {
+.section5 {
   height: 2vh;
-  background-color:  #71aeaea4;
+  background-color: #7fb8b8ad;
   margin: 0 -4.9%;
   padding: 90px;
   padding-inline: 120px;
 }
 
-.brands .main {
+.section5 .main {
   display: flex;
   justify-content: space-evenly;
-  
   flex-wrap: wrap;
 }
-.brands .main img {
+
+.section5 .main img {
   min-width: 100%;
 }
 
+.section6 {
+  margin: 80px -4.9%;
+  padding-inline: 100px;
+  background-image: url("../img/formbg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
-.contact {
-    margin: 80px -4.9%;
-    padding-inline: 100px;
-    background-image: url("../img/formbg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.section6 .main {
+  height: 40vh;
+  padding: 30px;
+  position: relative;
+}
+
+.section6 .main .form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 86%;
+  height: 30vh;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section6 .main .form div h1 {
+  font-size: xx-large;
+  margin-top: 70px;
+}
+
+.section6 .main .form div.subscribe input[type="text"] {
+  background-color: #d4dae2;
+  width: 280px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+.section6 .main .form div.subscribe input[type="text"]:focus {
+  border: none;
+  outline: none;
+}
+
+.section6 .main .form div.subscribe button {
+  background-color: #db4a87;
+  padding: 15px 35px;
+  color: #f8f0ea;
+  border: none;
+  border-radius: 5px;
+}
+
+.section6 .main .form div.subscribe input[type="checkbox"] {
+  background-color: #D4DAE2;
+  accent-color: #D4DAE2;
+  color: #d4dae2;
+  margin-top: 10px;
+}
+
+.section6 .main .form div.subscribe label {
+  color: #d4dae2;
+}
+
+section.Popular {
+  margin-top: 200px;
+}
+section.Popular .title {
+  text-align: center;
+}
+section.Popular .title p {
+  color: #0f2137;
+  font-weight: normal;
+}
+
+.Popular .textCard {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  line-height: 28px;
+  border-radius: 30px;
+}
+.Popular .textCard div {
+  overflow: hidden;
+}
+
+.Popular .textCard div p {
+  color: #0f2137b1;
+}
+.Popular .textCard div .bg-text {
+  background-color: #7fb8b8ad;
+  margin-bottom: 20px;
+  padding: 25px;
+  margin-top: -0.0001%;
+}
+.Popular .textCard h2 {
+  font-size: 21px;
+}
+.Popular .img2{
+  width: 100%;
+}
+
+.Popular .textCard div .textImage {
+  position: relative;
+}
+.Popular .textCard div .textImage h3 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: #ffffff;
+}
+
+.Popular .textCard div .textImage:last-child img {
+  margin-top: 5%;
+}
+@media (max-width: 900px) {
+  .Popular img {
+    width: 99%;
   }
-  
-  .contact .main {
-    height: 40vh;
-    padding: 30px;
-    position: relative;
+  .Popular .textCard div .textImage h3 {
+    top: 30%;
   }
-  
-  .contact .main .form {
+}
+
+
+
+
+
+
+@media (max-width: 880px) {
+  .section1 {
+    padding: 70px 40px 10px;
+  }
+
+  .section1 .main img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section2 {
+    height: 50vh;
+    background-color: var(--mainColor);
+    margin: -2%;
+    margin-top: 150px;
+  }
+
+  .section2 .container img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 60px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    width: 86%;
-    height: 30vh;
-    align-items: flex-start;
-    border-radius: 10px;
-    padding: 20px;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    left: 15%;
+    top: -30%;
   }
-  
-  .contact .main .form div h1 {
-    font-size: xx-large;
-    margin-top: 70px;
+
+  .section3 {
+    height: fit-content;
+    background-color: var(--mainColor);
+    margin: 0 -2%;
   }
-  
-  .contact .main .form div.subscribe input[type="text"] {
-    background-color: #d4dae2;
-    width: 280px;
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 80px;
+
+  .section3 .container div {
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 2px;
   }
-  
-  .contact .main .form div.subscribe input[type="text"]:focus {
-    border: none;
-    outline: none;
+
+  .section3 .container {
+    padding-top: 50px;
   }
-  
-  .contact .main .form div.subscribe button {
-    background-color: #db4a87;
-    padding: 15px 35px;
-    color: #f8f0ea;
-    border: none;
-    border-radius: 5px;
+
+  .section4 {
+    height: 70vh;
+    margin: 0 -2%;
   }
-  
-  .contact .main .form div.subscribe input[type="checkbox"] {
-    background-color: #D4DAE2;
-    accent-color: #D4DAE2;
-    color: #d4dae2;
+
+  .section5 {
+    height: 66vh;
+    margin: 0 -2%;
+  }
+
+  .section6 {
+    margin: 80px -2%;
+    padding-inline: 5px;
+  }
+
+  .section6 .main {
+    height: 100vh;
+  }
+
+  .section6 .main .form {
+    height: 60vh;
+    padding-bottom: 12%;
+  }
+
+  .section6 .main .form div.subscribe button {
+    margin-top: 30px;
+  }
+
+  .section6 .main .form div.subscribe input[type="checkbox"] {
     margin-top: 10px;
   }
-  
-  .contact .main .form div.subscribe label {
-    color: #d4dae2;
-  }
-
-
-
-
-
-@media (max-width: 900px) {
-    section.Creativity {
-      padding: 70px 40px 10px;
-    }
-    section.Creativity .main img {
-      max-width: 100%;
-      margin-bottom: 30px;
-    }
-  }
-
-  @media (max-width: 900px) {
-    section.second-Creativity {
-      height: 50vh;
-      background-color: var(--mainColor);
-  
-      margin: -2%;
-      margin-top: 150px;
-    }
-    section.second-Creativity .container img {
-      width: 70%;
-      height: auto;
-      margin-bottom: 60px;
-      position: absolute;
-      left: 15%;
-      top: -30%;
-    }
-  }
-  @media (max-width: 900px) {
-    section.third-Creativity {
-      height: fit-content;
-      background-color: var(--mainColor);
-      margin: 0 -2%;
-    }
-    section.third-Creativity .container div {
-      padding-left: 0px;
-      padding-right: 0px;
-      gap: 2px;
-  
-    }
-    section.third-Creativity .container  {
-    padding-top: 50px;
-    }
-  }
-  @media (max-width: 900px) {
-    .Fourth-Creativity {
-      height: 70vh;
-      margin: 0 -2%;
-  
-    }
-  }
-  @media (max-width: 900px) {
-    .brands {
-      height: 66vh;
-      margin: 0 -2%;
-  
-    }
-  }
-  @media (max-width: 900px) {
-    .contact {
-      margin: 80px -2%;
-      padding-inline: 5px;
-    }
-    .contact .main {
-      height: 100vh;
-    }
-  
-    .contact .main .form {
-      height: 60vh;  padding-bottom:12%;
-    }
-    .contact .main .form div.subscribe button {
-      margin-top: 30px;
-  
-    }
-    
-    .contact .main .form div.subscribe input[type="checkbox"] {
-      margin-top: 10px;
-    }
-  }
+}
